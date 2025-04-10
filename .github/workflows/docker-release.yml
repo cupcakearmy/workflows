@@ -12,6 +12,13 @@ on:
         required: false
         default: false
         description: 'push image'
+    secrets:
+      DOCKER_USERNAME:
+        required: true
+        description: 'docker username'
+      DOCKER_TOKEN:
+        required: true
+        description: 'docker token'
 
 jobs:
   docker:
